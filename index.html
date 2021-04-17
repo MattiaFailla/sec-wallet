@@ -13,11 +13,12 @@
       <div id="sidebar-wrapper" class="bg-dark">
         <ul class="sidebar-nav">
             <li class="sidebar-brand">
+              <br>
                 <a href="#">
-                  <img src="img/space_logo.png" height="35" class="d-inline-block" alt="">
-                  Tokens App
+                  <img src="img/space_logo.png" height="100" class="d-inline-block" alt="">
                 </a>
-            </li>
+                <h4>Tokens App</h4>
+            </li><br><br><br><br><br>
             <li>
               <a id="nav-wallet" href="#">Wallet</a>
             </li>
@@ -25,7 +26,7 @@
               <a id="nav-tokens" href="#">Tokens</a>
             </li>
             <li>
-              <a id="nav-trade" href="#">Trade</a>
+              <a id="nav-marketplace" href="#">Marketplace</a>
             </li>
             <li>
               <a id="nav-history" href="#">History</a>
@@ -75,6 +76,17 @@
                         <div class="header">
                           <h5 class="title" id="title-token-wallet">Your tokens wallet.</h5>
                         </div>
+
+                        <hr>
+
+                        <div class="header">
+                          <h5 class="title" id="receive-coins-wallet">Receive Tokens</h5>
+                        </div>
+
+                        <div class="input-group mb-3">
+                          <input id="input-pubkey" type="text" class="form-control" placeholder="Loading the wallet pubkey..." disabled>
+                        </div>
+
                         <hr>
 
                         <div class="header">
@@ -113,14 +125,6 @@
 
                           <hr>
 
-                          <div class="header">
-                            <h5 class="title" id="receive-coins-wallet">Receive Tokens</h5>
-                          </div>
-
-                          <div class="input-group mb-3">
-                            <input id="input-pubkey" type="text" class="form-control" placeholder="Loading the wallet pubkey..." disabled>
-                          </div>
-
                       </div>
                     </div>
                 </div>
@@ -135,6 +139,20 @@
                         <div class="header">
                           <h5 class="title" id="title-token-wallet">Your SPACE wallet.</h5>
                         </div>
+
+                        <hr>
+
+                        <div class="header">
+                          <h5 class="title" id="receive-coins-wallet">Receive SPACE</h5>
+                        </div>
+
+                        <div class="input-group mb-3">
+                          <input id="text-new-address" type="text" class="form-control" placeholder="Loading the wallet address..." disabled>
+                          <div class="input-group-append">
+                            <button id="button-new-address" class="btn btn-outline-secondary" type="button">New Address</button>
+                          </div>
+                        </div>
+
                         <hr>
 
                         <div class="header">
@@ -170,16 +188,6 @@
 
                         <hr>
 
-                        <div class="header">
-                          <h5 class="title" id="receive-coins-wallet">Receive SPACE</h5>
-                        </div>
-
-                        <div class="input-group mb-3">
-                          <input id="text-new-address" type="text" class="form-control" placeholder="Loading the wallet address..." disabled>
-                          <div class="input-group-append">
-                            <button id="button-new-address" class="btn btn-outline-secondary" type="button">New Address</button>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -216,7 +224,7 @@
                               <th scope="col">Name</th>
                               <th scope="col">Description</th>
                               <th scope="col">Supply</th>
-                              <th scope="col">Owner</th>
+                              <th scope="col">Token ID</th>
                             </tr>
                             </thead>
                             <tbody id="table-token-list-full"></tbody>
@@ -276,8 +284,8 @@
           </div>
 
 
-          <!-- Navbar 3 - TRADE -->
-          <div id="trade-page-only">
+          <!-- Navbar 3 - Marketplace -->
+          <div id="marketplace-page-only">
 
               <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">

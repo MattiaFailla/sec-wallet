@@ -5,7 +5,7 @@ window.Bootstrap = require('./node_modules/bootstrap/dist/js/bootstrap.js')
 
 ////// SET PAGES
 // Main pages
-let pages = ['wallet', 'tokens', 'trade', 'history', 'settings']
+let pages = ['wallet', 'tokens', 'marketplace', 'history', 'settings']
 
 // Launch with the first page
 openPage(pages[0])
@@ -781,11 +781,11 @@ async function renderFullTokenTable() {
                     <td>${token.name}</td>
                     <td>${token.description}</td>
                     <td>${token.supply}</td>
-                    <td>${token.owner}</td>
+                    <td>${token.id}</td>
                 </tr>
             `)
     })
-    // TODO: Strip the length of the owner address
+    // TODO: Add back the owner address to the table, then: Strip the length of the owner address
 }
 
 
